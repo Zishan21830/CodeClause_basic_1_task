@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <!-- custom css file -->
+    <link rel="stylesheet" href="./stylesheet/style.css" />
+  </head>
+
+  <body class="">
+    <!-- main section start -->
+    <main class="main_section d_flex">
+      <!-- main left section start -->
+      <section class="left_section center">
+        <img src="./Image/left_section_image.png" alt="weather-image" />
+      </section>
+      <!-- main left section end -->
+
+      <!-- main right section start -->
+      <section class="right_section center">
+        <section class="weather_card border center f_direction">
+          <div class="input_box center">
+            <input type="text" name="city_name" /><i
+              class="fa-solid fa-magnifying-glass"
+            ></i>
+          </div>
+          <div class="weather_icon"></div>
+          <div class="location_details center f_direction">
+            <div class="location_name">
+              <i class="fa-solid fa-location-dot"></i
+              ><span class="location"></span>, <span class="country"></span>
+            </div>
+            <div class="time_and_date">
+              <span class="day"></span> | <span class="month"></span>
+              <span class="date"></span> | <span class="hours"></span> :
+              <span class="minutes"></span> <span class="period"></span>
+            </div>
+          </div>
+          <div class="temperature center f_direction">
+            <div class="temp"><span class="main_temp"></span>&deg;C</div>
+            <div class="min_and_max_temp">
+              Min <span class="min_temp"></span>&deg;C | Max
+              <span class="max_temp"> </span>&deg;C
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- main right section end -->
+    </main>
+    <!-- main section end -->
+
+    <!-- javascript start  -->
+
+    <!-- font awesome script -->
+    <script
+      src="https://kit.fontawesome.com/9f7198c825.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- iconic.io script-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- custom js file -->
+    <script src="./js/index.js"></script>
+    <!-- javascript end  -->
+  </body>
+</html>
